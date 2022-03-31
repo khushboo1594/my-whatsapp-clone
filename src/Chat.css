@@ -1,0 +1,98 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+}
+
+.chat__header {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat__header__info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__header__info > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat__header__info > p {
+  color: gray;
+}
+
+.chat__header__right {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url("./bg.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 40vw;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  background-color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.chat__name {
+  position: absolute;
+  top: -15px;
+  /* left: 406px; */
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+.chat_timestamp {
+  font-weight: 800;
+  font-size: xx-small;
+  margin-left: 10px;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid lightgray;
+}
+
+.chat__footer > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+
+/* You can do this to send the message through the enter button */
+.chat__footer > form > button {
+  display: none;
+}
